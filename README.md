@@ -15,7 +15,7 @@ The analysis uses two key datasets:
 4.  **Statistical Analysis**: Used aggregation and boxplots to visualize distributions and identify significant differences.
 5.  **Predictive Modeling**: Built a Random Forest Classifier to predict trade profitability.
 
-## 💡 Key Insights (Part B)
+## 💡 Key Insights 
 ### 1. Performance: PnL is Higher During Fear
 *   **Insight**: Traders show significantly **higher daily PnL** during **"Fear"** periods compared to "Greed" or "Extreme Greed".
 *   **Visual Evidence**: The PnL distribution is shifted higher for Fear days.
@@ -29,7 +29,7 @@ The analysis uses two key datasets:
 *   **Insight**: While PnL is higher in Fear, the Win Rate is relatively stable across sentiments, implying that the PnL difference is driven by **trade frequency and magnitude** (volatility) rather than purely by higher accuracy.
 ![Win Rate vs Sentiment](win_rate_by_sentiment.png)
 
-## 🧠 Strategy Recommendations (Part C)
+## 🧠 Strategy Recommendations 
 Based on the analysis, we propose two key strategies:
 
 ### Strategy 1: "Fear Volatility Harvesting"
@@ -40,7 +40,7 @@ Based on the analysis, we propose two key strategies:
 *   **Concept**: During "Greed" phases, where the Sell bias is strong yet overall PnL is lower, adopt a defensive stance.
 *   **Action**: Tighten stop-losses on Long positions or look for mean-reversion Short opportunities when sentiment enters "Extreme Greed" (>75), as the crowd might be over-leveraged and prone to corrections.
 
-## 🤖 Bonus: Predictive Model
+## 🤖 Predictive Model
 A Random Forest Classifier was built to predict individual trade profitability:
 *   **Accuracy**: ~93%
 *   **Key Drivers**: `Start Position` and `Side` were the most significant predictors. The sentiment value itself plays a secondary role compared to trade-specific parameters.
